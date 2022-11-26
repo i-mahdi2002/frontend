@@ -1,0 +1,447 @@
+﻿@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot') format('eot');
+    src : url('../fonts/vazir.ttf') format('truetype'),
+    url('../fonts/vazir.woff') format('woff'),
+    url('../fonts/vazir.woff2') format('woff2');
+}
+html,body,ul,li,h2,p{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'vazir';
+    direction: rtl;
+}
+
+.container{
+    width: 1300px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* این بخش هدر است */
+
+header{
+    height: 900px;
+    width: 100%;
+    background-image: url('../images/bakcground-header.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    position: relative;
+}
+header .background-overlay{
+   background-color: rgba(0, 0, 0, .5);
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+}
+header nav{
+    width: 100%;
+    height: 80px;
+    background-color: rgba(0, 0, 0, .3);
+    display: flex;
+}
+
+.hamburger
+{
+    display:none;
+}
+
+
+header nav ul{
+    width: 70%;
+    float: right;
+    list-style: none;
+}
+
+header nav ul li{
+    float: right;
+    margin-left: 40px;
+    font-size: 20px;
+    color: #FFF;
+    line-height: 4;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+header nav ul li a:hover{
+    color: #c00;
+    transition: .3s all ease-in-out;
+    -o-transition: .3s all ease-in-out;
+    -moz-transition: .3s all ease-in-out;
+    -webkit-transition: .3s all ease-in-out;
+}
+#responsive-navigation{
+    display: none;
+}
+header div.logo{
+    width: 29%;
+    text-align: left;
+    float: left;
+    
+}
+
+header div.logo img{
+    height: 80px;
+}
+
+header .header-title{
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+}
+
+header .header-title h2{
+    font-size: 45px;
+    font-weight: bold;
+}
+
+header .header-title p{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+
+
+/* Our-Story  */
+
+
+#our-story{
+    height: 500px;
+    width: 100%;
+    margin: 100px auto;
+    display:flex;
+}
+
+#our-story .story-description{
+    width: 49%;
+    float: right;
+}
+#our-story .story-description h2{
+    margin: 150px 0 0 0;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+#our-story .story-description p{
+    margin: 30px auto;
+    width: 500px;
+    text-align: center;
+    line-height: 2;
+}
+#our-story .story-img{
+    width: 49%;
+    float: right;
+}
+
+#our-story .story-img img{
+    width: 100%;
+    height: 480px;
+}
+
+
+/* Sweet */
+
+
+#Sweet{
+    background-image: url('../images/backtwo.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    height: 500px;
+    position: relative;
+    margin-top: 100px;
+    
+}
+
+#Sweet .sweet-overlay{
+    background-color: rgba(0, 0, 0, .6);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display:flex;
+}
+
+#Sweet .sweet-description{
+    text-align: center;
+    color: #fff;
+    margin: 120px auto;
+    justify-content: center;
+}
+
+#Sweet .sweet-description h2{
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+#Sweet .sweet-description p{
+    font-size: 25px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/*  Menu */
+
+
+#menu {
+    width: 100%;
+    height: 500px;
+    margin-top: 100px;
+    display:flex;
+}
+
+#menu .menu{
+    float: right;
+    width: 49%;
+    text-align: center;
+}
+
+#menu .menu h2{
+    font-size: 40px;
+    font-weight: bolder;
+    margin-top: 70px;
+}
+#menu .menu p{
+    width: 600px;
+    text-align: center;
+    margin: 30px auto;
+    line-height: 2;
+    font-size: 20px;
+}
+#menu .menu a{
+    text-decoration: none;
+    padding: 10px;
+    border-bottom: 2px solid #c00;
+    color: black;
+    font-size: 20px;
+    
+}
+#menu .menu a:hover{
+    color: #333333;
+    border-bottom: 5px solid #c00;
+    transition: .3s all ease-in-out;
+}
+#menu .menu-item{
+    float: right;
+    width: 49%;
+}
+
+#menu .menu-item ul{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    float: left;
+}
+
+#menu .menu-item ul li{
+    float: right;
+    width: 49%;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+#menu .menu-item ul li img{
+    width: 90%;
+    height: 230px;
+}
+
+
+
+/* hot */
+
+#hot{
+    width: 100%;
+    height: 500px;
+    background-image: url('../images/1.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    margin-top: 100px;
+    display:flex;
+}
+
+#hot .hot-overlay{
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#hot .hot-description{
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    margin-top: 150px;
+}
+
+#hot .hot-description p{
+    margin-top: 20px;
+}
+
+
+/* delight */
+
+#delight{
+    width: 100%;
+    height: 500px;
+    margin: 100px auto;
+    display:flex;
+}
+
+#delight .delight{
+    width: 100%;
+    height: 100%;
+}
+
+#delight .delight .delight-description{
+    width: 49%;
+    float: right;
+    height: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+#delight .delight .delight-description h2{
+    font-weight: bolder;
+    font-size: 35px;
+
+}
+#delight .delight .delight-description p{
+    font-size: 25px;
+    margin-top: 60px;
+}
+
+#delight .delight .delight-image{
+    width: 49%;
+    height: 100%;
+    float: left;
+    text-align: left;
+}
+
+#delight .delight .delight-image img{
+    width: 250px;
+    height: 400px;
+    margin-right: 25px;
+}
+
+
+/* Footer */
+
+footer{
+    width: 100%;
+    height: 800px;
+    background-color: rgb(20, 20, 20);
+    margin-top: 100px;
+    
+}
+
+.flex-footer{
+    display:flex;
+}
+
+footer .footer{
+    width: 100%;
+    height: 100%;
+    padding: 40px 0 0 0;
+}
+
+footer .footer .About{
+    width: 100%;
+    text-align: center;
+    margin: 80px auto;
+}
+
+
+footer .footer .About h2{
+    font-size: 25px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+footer .footer .About p{
+    color: #fff;
+    font-size: 18px;
+    width: 500px;
+    line-height: 2;
+    margin: 0 auto
+}
+
+footer .footer .contact-us{
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+footer .footer .contact-us .newslatter{
+    width: 30%;
+}
+
+footer .footer .contact-us .newslatter h2{
+    width: 100%;
+    color: #fff;
+    margin-bottom: 30px;
+}
+footer .footer .contact-us .newslatter input{
+    width: 60%;
+    padding: 10px;
+}
+
+footer .footer .contact-us .social{
+    width: 30%;
+}
+
+footer .footer .contact-us .social h2{
+    margin-bottom: 30px;
+    color: #fff;
+    text-align: center;
+}
+footer .footer .contact-us .social ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+footer .footer .contact-us .social ul li{
+    margin-left: 20px;
+    color: #fff;
+}
+footer .footer .contact-us .social ul li i{
+    font-size: 30px;
+}
+
+footer .copy-right{
+width: 100%;
+height: 200px;
+margin-top: 50px;
+background-color: rgb(36, 36, 36);
+padding-top: 30px;
+display:flex;
+}
+
+footer .copy-right .copy-right-description{
+    text-align: center;
+    color: #fff;
+}
+
+footer .copy-right .copy-right-description h2{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
